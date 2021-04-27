@@ -1,0 +1,597 @@
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+}
+
+.typeLuz {
+  font-family: "Cairo", sans-serif;
+  font-weight: 300;
+}
+
+.typeRegular {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+}
+
+.typeNegrita {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+.typeNegro {
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.miNav {
+  width: 100%;
+  color: #f5f5f5;
+  background-color: #f8f1f4;
+  min-height: 100px;
+  max-height: auto;
+}
+
+.miNav img {
+  min-width: 50px;
+  max-width: 75px;
+}
+
+.miNav .navBoton:focus {
+  outline: none;
+}
+
+.miNav .navBoton span {
+  font-size: 20px;
+}
+
+.miNav .miMenu .liNav {
+  color: #191414;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.miNav .miMenu .liNav:hover {
+  color: #9c063d88;
+}
+
+.inicioSeccion {
+  margin-bottom: 1px;
+  padding: 0.1px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inicioSeccion .carousel-control-prev, .inicioSeccion .carousel-control-next {
+  width: 60px;
+}
+
+.inicioSeccion .miCaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+}
+
+.inicioSeccion .miCaption h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  font-size: 3.5em;
+  color: #272727;
+}
+
+.inicioSeccion .miCaption p {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-transform: none;
+  color: #191414;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.inicioSeccion .miCaption .redcarousel {
+  padding-top: 5em;
+}
+
+.inicioSeccion .miCaption .redcarousel span {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: none;
+  color: #191414;
+}
+
+.inicioSeccion .miCaption .redcarousel img {
+  width: 50px;
+}
+
+.inicioSeccion .miCaption .miBoton {
+  background-color: #e2135888;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #faf2f2;
+}
+
+.inicioSeccion .miCaption .miBoton:hover {
+  color: #191414;
+}
+
+.inicioSeccion2 {
+  background-color: #faf2f2;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 50px 30px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicioSeccion2 .titleJoya h1 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: #f5f5f5;
+  padding: 15px;
+  text-align: center;
+}
+
+.inicioSeccion2 p {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #191414;
+}
+
+.inicioSeccion2 img {
+  width: 250px;
+  padding: 0 5px 5px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+.inicioSeccion3 {
+  background-color: #faf2f2;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #a3a1a1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.inicioSeccion3 .destacados {
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #a03360;
+  text-transform: uppercase;
+}
+
+.inicioSeccion3 .miCard {
+  width: 18rem;
+}
+
+.inicioSeccion3 .miCard img {
+  width: 315px;
+}
+
+.inicioSeccion3 .botonVerMas {
+  color: #191414;
+  background-color: #e2135888;
+}
+
+.inicioSeccion4 {
+  padding: 40px;
+  width: 100%;
+  height: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #faf2f2;
+}
+
+.inicioSeccion4 p {
+  font-size: 1em;
+}
+
+.nosotros {
+  padding: 20px;
+  width: 100%;
+  height: 70vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #faf2f2;
+  background-size: cover;
+}
+
+.nosotros .nosotrosTitulo {
+  padding: 10px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.nosotros span {
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.1em;
+  line-height: 40px;
+  word-spacing: 4px;
+  text-align: center;
+  color: #191414;
+}
+
+.joyasCaelum {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #faf2f2;
+}
+
+.joyasCaelum .carousel-control-prev, .joyasCaelum .carousel-control-next {
+  width: 60px;
+}
+
+.joyasCaelum .miCaptionJoyas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+}
+
+.joyasCaelum .miCaptionJoyas p {
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  font-size: 4em;
+  color: #191414;
+}
+
+.joyasCaelum .miCaptionJoyas .myButtonn {
+  padding: 1px;
+  min-width: 80px;
+  max-width: 200px;
+  min-height: 20px;
+  max-height: 50px;
+  background-color: #e2135888;
+  border: none;
+}
+
+.joyasCaelum .miCaptionJoyas .myButtonn:focus {
+  outline: none;
+}
+
+.joyasCaelum .miCaptionJoyas .myButtonnType {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #faf2f2;
+}
+
+.joyasCaelum .miCaptionJoyas .myButtonnType:hover {
+  color: #f5f5f5;
+}
+
+#galeriaAnillosPlata, #galeriaPulserasPlata, #galeriaArosPlata, #galeriaCadenasYDijesPlata {
+  margin: 0;
+  padding: 40px;
+  min-width: 100%;
+  width: 100%;
+  min-height: 50%;
+  max-height: 100%;
+  background-color: #faf2f2;
+  border-top: 2px solid #a3a1a1;
+}
+
+#galeriaAnillosPlata img, #galeriaPulserasPlata img, #galeriaArosPlata img, #galeriaCadenasYDijesPlata img {
+  margin: 5px;
+  width: 250px;
+  border: 10px solid white;
+}
+
+#galeriaAnillosPlata h3, #galeriaPulserasPlata h3, #galeriaArosPlata h3, #galeriaCadenasYDijesPlata h3 {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #272727;
+  background-color: #f8f1f4;
+}
+
+#galeriaAnillosPlata .galeriaProductos, #galeriaPulserasPlata .galeriaProductos, #galeriaArosPlata .galeriaProductos, #galeriaCadenasYDijesPlata .galeriaProductos {
+  background-color: #faf2f2;
+  margin: 5px;
+  padding: 0 50px 20px;
+}
+
+.relojeria {
+  background-color: #faf2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.relojeria .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.relojeria .imagenes img {
+  padding: 0 20px 20px;
+  width: 300px;
+}
+
+.relojeria .tituloRelojeria {
+  width: 100%;
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.relojeria .tituloRelojeria h3 {
+  font-size: 1em;
+}
+
+.contacto {
+  padding: 70px 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/background.jpg);
+  background-size: cover;
+}
+
+.contacto p {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #272727;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #faf2f2;
+}
+
+.contacto textarea {
+  resize: none;
+}
+
+.contacto .color-enviar {
+  width: 90px;
+  height: 40px;
+  background-color: #640026;
+  color: #faf2f2;
+  border: none;
+}
+
+.contacto .color-enviar:hover {
+  color: #f5f5f5;
+}
+
+.contacto .color-eliminar {
+  width: 90px;
+  height: 40px;
+  background-color: #fc4343;
+  color: #faf2f2;
+  border: none;
+}
+
+.contacto .color-eliminar:hover {
+  color: #f5f5f5;
+}
+
+.contacto .letra-boton {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.footer {
+  border-top: 2px solid #a3a1a1;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #f8f1f4;
+  color: #191414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer h4 {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.footer span {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.footer .viaContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .viaContacto img {
+  width: 1.3em;
+  margin-bottom: 30px;
+}
+
+.footer .botonWhatsapp {
+  display: block;
+  position: fixed;
+  right: 1.5em;
+  bottom: 10px;
+  z-index: 100;
+}
+
+.footer .botonWhatsapp img {
+  width: 3.4em;
+}
+
+.footer .botonWhatsapp:hover {
+  -webkit-transform: translate(2px, 4px);
+          transform: translate(2px, 4px);
+}
+
+@media all and (max-width: 768px) {
+  .destacados {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #191414;
+  }
+  #galeriaAnillosPlata img, #galeriaPulserasPlata img, #galeriaArosPlata img, #galeriaCadenasYDijesPlata img {
+    display: block;
+    width: 200px;
+  }
+  #galeriaAnillosPlata span, #galeriaPulserasPlata span, #galeriaArosPlata span, #galeriaCadenasYDijesPlata span {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .footer h4 h4 {
+    font-weight: 700;
+    font-size: 0.7em;
+  }
+  .botonWhatsapp img {
+    width: 2.2em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
