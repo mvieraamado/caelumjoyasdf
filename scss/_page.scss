@@ -288,27 +288,14 @@ body{
 }
 .relojeria{
     background-color: $fondo-bg;
-    display: flex;
-    flex-direction: column;
-    .imagenes{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        img{
-            padding: 0 20px 20px;
-            width: 300px;
-        }
-    }
-    .tituloRelojeria{
-        width: $anchoTotalPorcentaje;
-        height: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        text-transform: uppercase;
-        h3{
+    .relojeria{
+        background-color: $fondo-bg;
+        .tituloRelojeria{
+            padding-top: 30px;
+            font-family: $font;
             font-size: 1em;
+            font-weight: $fontNegrita;
+            text-transform: capitalize;
         } 
     }
 }
