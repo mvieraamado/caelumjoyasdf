@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    font-family: $font;
+    font-family: $fontCairo;
 }  
+/*comienzo menu*/
 .miNav{
     width: $anchoTotalPorcentaje;
-    color: $primario;
-    background-color: $fondo-nav;
-    min-height: 100px;
+    min-height: 85px;
     max-height: auto;
+    background-color: $colorNav;
     img {
         min-width: 50px;
         max-width: 75px;
@@ -18,32 +19,49 @@ body{
     .navBoton{
         &:focus {outline: none;
         }
-        span{
-            font-size: 20px;
-        }
     }
     .miMenu{
         .liNav{
-            color: $texto-secundario;
-            font-family: $font;
-            font-size: 0.8rem;
-            font-weight: $fontNegrita;
-            text-transform: uppercase;
+            color: $colorTextoContenido;
+            font-family: monospace;
+            font-weight: $fontLight;
+            font-size: 1.1rem;
             &:hover{
                 color: $colorHover;
-                
+                font-weight: $fontBold;
             }
+        }
+        
+    }
+    .menuJoyas{
+        a{
+            background-color: $colorNav; 
+            font-family: monospace; 
+            font-weight: $fontLight;
+            font-size: 1.1rem;
+        }
+        .submenuJoyas{
+            a{
+                background-color: $colorNav;
+                font-family: monospace; 
+                font-weight: $fontLight;
+                font-size: 0.9rem;
+            }
+        }
+        .dropdown-item:hover, .dropdown-item:focus{
+            color: #16181b;
+            text-decoration: none;
+            background-color: $colorHover;
         }
     }
 }
+/*fin menu*/
+/*comienzo seccion uno (Inicio)*/
 .inicioSeccion{
-    margin-bottom: 1px;
+    margin: 0;
 	padding: 0.1px;
 	width: $anchoTotalPorcentaje;
 	height: 100%;
-	box-sizing: border-box;
-    margin: 0; 
-	padding: 0;
 	width: $anchoTotalPorcentaje;
 	height: 100%;
     .carousel-control-prev, .carousel-control-next{
@@ -54,364 +72,505 @@ body{
         flex-direction: column;
         justify-content: center;
         height: 70%;
-        h3{
-            font-family: $font;
-            font-weight: $fontNegro;
-            font-size: 3.5em;
-            color: $texto-grande;
+        .tituloCaption{
+            padding-bottom: 15px;
+            font-family: monospace;
+            font-weight: $fontBlack;
+            font-size: 3.7rem;
+            color: $colorTextoGrande;
         }
-        p{
-            font-family: $font;
-            font-weight: $fontRegular;
-            font-size: 1.5em;
+        .textoCaption{
+            padding-top: 15px;
+            font-family: monospace;
+            font-weight: $fontLight;
+            font-size: 1.3rem;
             text-transform: none;
-            color: $texto-secundario;
-            animation-duration: 3s;
-            animation-name: slidein;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            @keyframes slidein {
-                from {
-                  margin-left: 100%;
-                  width: 300%;
-                }
-              
-                to {
-                  margin-left: 0%;
-                  width: 100%;
-                }
-            }
+            color: $colorTextoGrande;
         }
-        .redcarousel{
-            padding-top: 5em;
-            span{
-                font-family: $font;
-                font-weight: $fontNegrita;
-                font-size: 1.2em;
-                text-transform: none;
-                color: $texto-secundario;
-            }
-            img{
-               width: 50px; 
-            }
-        }
-        .miBoton{ 
-            background-color: $botonProductos;
-            font-family: $font;
-            font-size: 1.5em;
-            font-weight: $fontNegrita;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $fondo-bg;
-            &:hover{
-                color: $texto-secundario;
-            }
-        }
-    }
-}
-.inicioSeccion2{
-	background-color:$fondo-bg;
-    margin-right: 0;
-    margin-left: 0;
-	padding: 50px 30px;
-	width: $anchoTotalPorcentaje;
-	height: 100%;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-    .titleJoya{
-        h1 {
-            font-family: $font;
-            font-weight: $fontNegro;
-            font-size: 3em;
-            color: $primario;
-            padding: 15px;
-            text-align: center; 
-        }
-    }
-    p{
-        font-weight: $fontNegrita;
-        font-size: 1.1em;
-        color: $texto-secundario;
-    }
-    img{
-        width: 250px;
-	    padding: 0 5px 5px;
-        animation-duration: 3s;
-        animation-name: aparecer;}
-        @keyframes aparecer {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 2;
-        }
-    } 
-}
-.inicioSeccion3{
-	background-color: $fondo-bg;
-	padding: 40px;
-	width: $anchoTotalPorcentaje;
-	height: 100%;
-    border-top: 2px solid rgb(163, 161, 161);
-    box-sizing: border-box;	
-    .destacados{
-        text-align: center;
-        font-family: $font;
-        font-weight: $fontNegrita;
-        font-size: 1.8rem;
-        color: rgb(160, 51, 96);
-        text-transform: uppercase;
-    }
-    .miCard{
-        width: 18rem;
-        img{
-            width: 315px;
-        }
-    }
-    .botonVerMas{ 
-        color: $texto-secundario; 
-        background-color: $botonProductos;
-    }   
-    
-}
-.inicioSeccion4{
-	padding: 40px;
-	width: $anchoTotalPorcentaje;
-	height: 30%;
-	box-sizing: border-box;
-	background-color: $fondo-bg;
-    p{
-       font-size: 1em; 
-    }
-}
-.nosotros{
-	padding: 20px;
-	width: $anchoTotalPorcentaje;
-	height: 70vh;
-	box-sizing: border-box;
-	background-color: $fondo-bg;
-    background-size: cover;
-    .nosotrosTitulo{
-	    padding: 10px;
-	    font-size: 1.2em;
-	    text-transform: uppercase;
-    }
-    span{
-	    padding: 50px;
-	    box-sizing: border-box;
-	    font-size: 1.1em;
-	    line-height: 40px;
-	    word-spacing: 4px;
-	    text-align: center;
-	    color: $texto-secundario;
-    }
-}
-.joyasCaelum{
-    margin: 0;
-	padding: 0;
-	width: $anchoTotalPorcentaje;
-	height: 100%;
-	box-sizing: border-box;
-	width: $anchoTotalPorcentaje;
-	height: 100%;
-    background-color: $fondo-bg;
-    .carousel-control-prev, .carousel-control-next{
-        width: 60px;
-    }
-    .miCaptionJoyas{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 70%;
-        p{
-            font-family: $font;
-            font-weight: $fontNegro;
-            font-size: 4em;
-            color: $texto-secundario;
-        }
-        .myButtonn{
-            padding: 1px;
+        button{ 
+            margin-top: 70px;
             min-width: 80px;
             max-width: 200px;
             min-height: 20px;
             max-height: 50px;
-            background-color: $botonProductos;
-            border: none;
+            background-color: $colorTema;
+            border: 5px solid $colorTema;
             &:focus{
                 outline: none;
             }
+            a{
+                font-family: monospace;
+                font-size: 1.2rem;
+                font-weight: $fontRegular;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $colorLetraButton;
+                &:hover{
+                    color: $colorHoverBlack;
+                }
+            } 
         }
-        .myButtonnType{
-            font-family: $font;
-            font-size: 1.5em;
-            font-weight: $fontRegular;
-            text-decoration: none;
-            color: $fondo-bg;
-            &:hover{
-                color: $primario;
+    }
+}
+/*comienzo seccion dos (Inicio)*/
+.inicioSeccion2{
+    margin: 0;
+	padding: 65px 50px 30px;
+	width: $anchoTotalPorcentaje;
+	height: 100%;
+    background-color:$colorBg;
+    .descriptionInicio{
+        margin-right: 0.1px;
+        padding: 50px 15px 15px;
+        width: $anchoTotalPorcentaje;
+        height: 100%;
+        -webkit-box-shadow: 1px 2px 25px 6px #3E3A42;
+        box-shadow: 1px 2px 25px 6px $colorTema;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+        h1{
+            padding: 20px 35px;
+            font-family: $fontCairo;
+            font-weight: $fontBlack;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $colorTextoGrande; 
+        }
+        p{
+            padding: 20px;
+            font-weight: $fontLight;
+            font-size: 1.1rem;
+            color: $colorTextoContenido;
+        }
+    }
+    .objetivosInicio{
+        margin-left: 0.1px;
+        padding: 0 0 10px;
+        width: $anchoTotalPorcentaje;
+        height: 100%;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+        .miTarjetaEspecial{
+            padding: 15px;
+            width: $anchoTotalPorcentaje;
+            height: 100%;
+            span{
+                font-weight: $fontLight;
+                font-size: 1.2rem;
+                color: $colorTextoContenido;
             }
+            img{
+                width: 40px;
+            }
+        } 
+    }
+   
+}
+/*comienzo seccion tres (Inicio)*/
+.inicioSeccion3{
+	padding: 30px 65px;
+    border-top: 1px solid rgb(165, 160, 160);
+	width: $anchoTotalPorcentaje;
+	height: 100%;
+    background-color: $colorBg;	
+    .destacados{
+        margin: 5px 0;
+        font-family: monospace;
+        font-weight: $fontBold;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #b6073b;
+        text-transform: uppercase;
+    }
+    .miCard{
+        border: none;
+        box-shadow: 1px 5px 20px 5px #f0aecc;
+        background-color: $colorBg;
+        h4{
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
+        img{
+            width: auto;
+            height: auto;
+        }
+        .botonVerMas{ 
+            background-color: $colorTema;
+            color: black;
+            font-size: 0.9rem;
+            font-weight: $fontRegular;
+            &:hover{
+                transform: scale(1.1, 1.1);
+                color: #310210;
+            } 
+        }  
     }
         
 }
-#galeriaAnillosPlata, #galeriaPulserasPlata, #galeriaArosPlata, #galeriaCadenasYDijesPlata{
-    margin: 0;
-    padding: 40px;
-    min-width: $anchoTotalPorcentaje;
-    width: $anchoTotalPorcentaje;
-    min-height: 50%;
-    max-height: 100%;
-	background-color: $fondo-bg;
-    border-top: 2px solid rgb(163, 161, 161);
-    img{
-        margin: 5px;
-	    width: 250px;
-        border: 10px solid rgb(255, 255, 255);
-    }
-    h3{
-        text-align: center;
-        font-size: 2.4em;
-        font-weight: $fontRegular;
-        text-transform: uppercase;
-        color: $texto-grande;
-        background-color: $fondo-nav;
-    }
-    .galeriaProductos{
-        background-color: $fondo-bg;
-        margin: 5px;
-        padding: 0 50px 20px;
-    }
-}
-.relojeria{
-    background-color: $fondo-bg;
-    .relojeria{
-        background-color: $fondo-bg;
-        .tituloRelojeria{
-            padding-top: 30px;
-            font-family: $font;
-            font-size: 1em;
-            font-weight: $fontNegrita;
-            text-transform: capitalize;
-        } 
-    }
-}
-.contacto {
-	padding: 70px 0;
-	width: 100%;
+/*comienzo seccion (Nosotros)*/
+.nosotros{
+    padding: 0 0 30px ;
+	width: $anchoTotalPorcentaje;
 	height: 100%;
-	background-image: url(../imagenes/background.jpg);
-    background-size: cover;
-    p{
-	    padding: 15px;
-	    font-size: 1rem;
-        font-weight: $fontRegular;
-        color: $texto-grande;
+    background-color: $colorBg;
+    h4{
+        padding: 30px 20px;
+        background-color: $colorSpecial;
+        font-family: monospace;
+	    font-size: 1.5rem;
+        font-weight: $fontLight;
+        color: $colorTextoTitulo;
 	    text-transform: uppercase;	
 	    text-align: center;
-	    background-color: $fondo-bg;
+    } 
+    div{
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+    }
+    .boxNos{
+        -webkit-box-shadow: 1px 2px 25px 6px #3E3A42;
+        box-shadow: 1px 2px 25px 6px #3E3A42;
+        p{
+            font-family: $fontCairo;
+            font-weight: $fontRegular;
+            font-size: 1.1rem;
+        }
+    }  
+}
+/*comienzo seccion (Joyas: anillos, aros, cadenas y dijes, pulseras)*/
+#galeriaAnillosPlata, #galeriaArosPlata, #galeriaCadenasyDijesPlata, #galeriaPulserasPlata{
+    margin: 0;
+    padding: 0 0 10px;
+    width: $anchoTotalPorcentaje;
+    height: 100%;
+	background-color: $colorBg;
+    h3{
+        padding: 25px 20px;
+        background-color: $colorSpecial;
+        font-family: monospace;
+	    font-size: 1.5rem;
+        font-weight: $fontRegular;
+        color: $colorTextoTitulo;
+	    text-transform: uppercase;	
+	    text-align: center;
+        text-shadow: 4px 4px 4px #fd84a8;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+    } 
+    .miCard{
+        padding-bottom: 5px;
+        border: none;
+        box-shadow: 1px 5px 20px 5px #f0aecc;
+        background-color: $colorBg;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+        img{
+            width: auto;
+            height: auto;
+        }
+        h4{
+            font-size: 0.9rem;
+            font-weight: $fontRegular;
+            color: $colorTextoTitulo;
+	        text-transform: uppercase;	
+	        text-align: center;
+        }
+        p{
+            font-size: 0.9rem;
+            font-weight: $fontRegular;
+            color: $colorTextoContenido;
+            text-align: center;
+        }
+    }
+}
+/*comienzo secion (Relojeria)*/
+.relojeria{
+    padding: 0;
+    width: $anchoTotalPorcentaje;
+    height: 100%;
+    background-color: $colorBg;
+    .tituloRelojeria{
+        padding: 30px 20px;
+        background-color: $colorSpecial;
+        font-family: monospace;
+        font-size: 1.5rem;
+        font-weight: $fontRegular;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 4px #fd84a8;
+        color: $colorTextoTitulo;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+    } 
+    .miCard{
+        border: none;
+        box-shadow: 1px 5px 20px 5px #f0aecc;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+        img{
+            width: auto;
+            height: auto;
+        }
+    }
+}
+/*comienzo seccion (Contacto)*/
+.areaContacto{
+    width: $anchoTotalPorcentaje;
+    height: 100%;
+    background-image: url(../imagenes/imagenbackgroung.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    .contacto {
+        padding: 50px 35px;
+	    width: $anchoTotalPorcentaje;
+	    height: 100%;
+	    background-color: transparent;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+    }
+    h4{
+        padding: 40px 20px;
+	    font-size: 1.7rem;
+        font-family: monospace;
+        font-weight: $fontLight;
+        color: $colorTextoTitulo;
+	    text-transform: uppercase;	
+	    text-align: center;
+	    background-color: $colorTema;
     }
     textarea{
 	    resize: none;
     }  
     .color-enviar{
-        width: 90px;
+        width: 100px;
         height: 40px;
-        background-color: rgb(100, 0, 38);
-        color: $fondo-bg;
+        background-color: $colorTema;
+        color: $colorLetraButton;
         border: none;
+        text-transform: uppercase;
         &:hover{
-            color: $primario;
+            color: $colorHoverBlack;
+            font-weight: $fontBold;
         }
     }
     .color-eliminar{
         width: 90px;
         height: 40px;
-        background-color: #fc4343;
-        color: $fondo-bg;
+        background-color: $colorTema;
+        color: $colorLetraButton;
         border: none;
         &:hover{
-            color: $primario;
+            color: $colorHoverBlack;
+            font-weight: $fontBold;
         }
     }
-    .letra-boton{
-        font-family: $font;
-        font-size: 1.2em;
-        font-weight: $fontRegular;
-    }
 }
+/*comienzo footer*/
 .footer{
-    border-top: 2px solid rgb(163, 161, 161);
+    padding: 10px 20px 20px;
+    border-top: 1px solid #8f737c;
     width: 100%;
-    height: auto;
-	padding: 20px;	
-	background-color: $fondo-nav;
-	color: $texto-secundario;	
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 30%;	
+	background-color: $colorNav;
+	color: $colorTextoContenido;	
+    .menuFooter{
+        li{
+            list-style: none;
+            text-transform: none;
+            padding-bottom: 9px;
+            text-transform: capitalize;
+            a{
+                color: $colorTextoContenido;
+                font-weight: $fontRegular;
+                text-decoration: none;
+                &:hover{
+                    color: $colorHover;
+                    font-weight: $fontBold;
+                }
+            }
+        }
+    }
     h4{
-        font-weight: $fontNegrita;
-	    font-size: 1em;
+        padding-bottom: 9px;
+        font-weight: $fontBold;
+	    font-size: 1rem;
+        text-transform: uppercase;
+        color: $colorTextoTitulo;
     }
     span{
+        padding-top: 1px;
+        padding-left:6px;
         font-weight: $fontRegular;
-        font-size: 0.8em;
+        font-size: 0.9rem;
+        color: $colorTextoContenido;
     }
     .viaContacto{
 	    display: flex;
 	    flex-direction: row;
-        img{
-	        width: 1.3em;
-	        margin-bottom: 30px;
+        margin-bottom: 25px;
+        .redesSociales{
+            &:hover{
+                opacity: 0.7;
+            }
+            img{
+                width: 35px;
+            }
         }
     }
     .botonWhatsapp{
 	    display: block;
 	    position: fixed;
-	    right: 1.5em;
-	    bottom: 10px;
+	    right: 20px;
+	    bottom: 40px;
 	    z-index: 100;
         img{
-            width: 3.4em;
+            width: 50px;
         } 
-        &:hover{
-	        transform: translate(2px,4px);
-        } 
+        animation-name: saltar;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        @keyframes saltar {
+            0%{
+                transform: scale(1.1,1.1);
+            }
+            50%{
+                transform: none;
+            }
+            100%{
+                transform: scale(1.1,1.1);
+            }
+        }
     }
 }
+/*fin footer*/
+/*media queries*/
 @media all and (max-width:768px){
-    .destacados{
-        text-align: center;
-        text-transform: capitalize;
-        font-family: $font;
-        font-weight: $fontRegular;
-        font-size: 1rem;
-        color: $texto-secundario;
+    .inicioSeccion2{
+        margin: 0;
+        padding: 40px 10px 7px;
+        .descriptionInicio{
+            padding: 20px 10px 10px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            h1{
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+            p{
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+        }
+        .objetivosInicio{
+            padding: 0;
+            padding-bottom: 10px;
+            .miTarjetaEspecial{
+                padding: 10px;
+                box-sizing: border-box;
+                span{
+                    font-weight: $fontLight;
+                    font-size: 0.9rem;
+                    color: $colorTextoContenido;
+                }
+                img{
+                    width: 30px;
+                }
+            } 
+        }
+       
     }
-    #galeriaAnillosPlata, #galeriaPulserasPlata, #galeriaArosPlata, #galeriaCadenasYDijesPlata{
-        img{
-            display: block;
-            width: 200px;
+    .inicioSeccion3{
+        padding: 30px;
+        border-top: 1px solid rgb(165, 160, 160);
+        .destacados{
+            font-size: 1.2rem;
+        }
+        .card{
+            h4{
+                font-size: 1rem;
+            }
+        }
+            
+    }
+    .nosotros{
+        padding: 0 5px 25px ;
+        .boxNos{
+            -webkit-box-shadow: 1px 2px 25px 6px #3E3A42;
+            box-shadow: 1px 2px 25px 6px #3E3A42;
+            p{
+                font-size: 1rem;
+            }
+        }
+        h4{
+            padding: 16px 10px;
+            font-size: 1.2rem;
+            text-align: center;
+        } 
+    }
+    #galeriaAnillosPlata, #galeriaArosPlata, #galeriaCadenasyDijesPlata, #galeriaPulserasPlata{
+        margin: 0;
+        h3{
+            padding: 25px 20px;
+            font-size: 1.3rem;
+            text-shadow: 3px 2px 5px rgb(97, 92, 92);
+        } 
+        .card{
+            padding-bottom: 5px;
+            h4{
+                font-size: 0.8rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .relojeria{
+        padding: 20px 0;
+        .tituloRelojeria{
+            padding-top: 20px;
+            padding-bottom: 14px;
+            font-size: 1.2rem;
+        } 
+    }
+    .areaContacto{
+        background-image: url(../imagenes/imagenbackground768px.jpg);
+        .contacto {
+            padding: 10px 20px 28px;
+        }
+        h4{
+            padding: 25px 12px;
+            font-size: 1.3rem;
+        }
+    }
+    .footer{
+        .menuFooter{
+            a{
+                font-size: 0.9rem;
+            }
+        }	
+        h4{
+            font-size: 0.9rem;
         }
         span{
-            font-size: 0.8rem;
-            font-weight: $fontLuz;
+            font-size: 0.9rem;
         }
-    }
-    .footer h4{
-        h4{
-            font-weight: $fontNegrita;
-            font-size: 0.7em;
+        .viaContacto{
+            margin-bottom: 25px;
+            .redesSociales{
+                img{
+                    width: 28px;
+                }
+            }
         }
-    }
-    .botonWhatsapp{
-        img{ 
-            width: 2.2em;
-        } 
-
+        .botonWhatsapp{
+            right: 18px;
+	        bottom: 20px;
+            img{
+                width: 45px;
+            } 
+        }
     }
 }

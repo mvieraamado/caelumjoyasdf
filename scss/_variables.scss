@@ -1,17 +1,18 @@
-$primario: #f5f5f5;
-$fondo-nav: #f8f1f4;
-$fondo-bg: #faf2f2;
-$texto-grande: #272727;
-$texto-secundario:#191414;
-
-$font: 'Cairo', sans-serif;
-$fontLuz: 300;
+$fontCairo: 'Cairo', sans-serif;
+$fontLight: 300;
 $fontRegular: 400;
-$fontNegrita: 700;
-$fontNegro: 900;
+$fontBold: 700;
+$fontBlack: 900;
+
+$colorNav: #ffd7e3;
+$colorBg: #fadbe3;
+$colorSpecial: #ff9fbf6e;
+$colorTextoGrande: #363234;
+$colorTextoTitulo: #000000;
+$colorTextoContenido: #080808;
+$colorTema: #fd116088;
+$colorHover: #f8558bfa;
+$colorHoverBlack: #050505;
+$colorLetraButton: #ffffff;
 
 $anchoTotalPorcentaje: 100%;
-$altoAuto: auto;
-
-$colorHover: #9c063d88;
-$botonProductos: #e2135888;
