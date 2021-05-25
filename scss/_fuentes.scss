@@ -1,20 +1,23 @@
 body{
-	font-family: $font;
-	font-weight:$fontLuz;
+	font-family: $fontCairo;
+	font-weight: $fontLight;
  }
- .typeLuz{
-	font-family: $font;
-	font-weight:$fontLuz;
+ .typeLight{
+	font-family: $fontCairo;
+	font-weight: $fontLight;
  }
+
  .typeRegular{
-	font-family: $font;
-	font-weight:$fontRegular;
+	font-family: $fontCairo;
+	font-weight: $fontRegular;
  }
- .typeNegrita{
-	font-family: $font;
-	font-weight:$fontNegrita;
+
+ .typeBold{
+	font-family: $fontCairo;
+	font-weight: $fontBold;
  }
- .typeNegro{
-	font-family: $font;
-	font-weight: $fontNegro;
+
+ .typeBlack{
+	font-family: $fontCairo;
+	font-weight: $fontBlack;
  }
